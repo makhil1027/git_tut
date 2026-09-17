@@ -1,0 +1,25 @@
+name: First GitHub Actions Pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show system information
+        run: |
+          echo "GitHub Actions is running!"
+          echo "Runner OS:"
+          uname -a
+
+      - name: List files
+        run: |
+          pwd
+          ls -la
