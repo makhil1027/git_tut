@@ -15,7 +15,7 @@ jobs:
 
       - name: Show system information
         run: |
-          echo "GitHub Actions is running!"
+          echo "GitHub Actions is running, welcome akhil!"
           echo "Runner OS:"
           uname -a
 
